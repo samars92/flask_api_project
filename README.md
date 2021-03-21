@@ -3,6 +3,8 @@
 How to run:
 * git clone https://github.com/samars92/flask_api_project.git
 * cd flask_api_project
+* virtualenv -p python3 venv
+* source ./venv/bin/activate
 * pip install -r requirements.txt
 
 db init and migrate:
