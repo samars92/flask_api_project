@@ -16,7 +16,7 @@ class Candidate(db.Model):
   name = db.Column(db.String(128), nullable=False)
   date_of_birth = db.Column(db.DateTime)
   years_of_experience = db.Column(db.Integer)
-  department_id = db.Column(db.Integer)
+  department_id = db.Column(db.String)
   resume_filename = db.Column(db.String(128), nullable=False)
   created_at = db.Column(db.DateTime)
 
