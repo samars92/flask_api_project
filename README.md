@@ -2,6 +2,7 @@
 
 How to run:
 * git clone https://github.com/samars92/flask_api_project.git
+* cd flask_api_project
 * pip install -r requirements.txt
 
 db init and migrate:
