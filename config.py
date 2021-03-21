@@ -3,7 +3,7 @@ import boto3, botocore
 AWS_BUCKET_NAME="bucket_name"
 s3_access_key = "access_key"
 s3_secret_key = "secret_key"
-endpoint_url = "endpoint_url"
+endpoint_url = "https://bucket.s3.amazonaws.com"
 
 s3 = boto3.client('s3',
                     aws_access_key_id=s3_access_key,
