@@ -16,7 +16,6 @@ def registerCandidate():
         filename = secure_filename(file.filename)  # This is convenient to validate your filename, otherwise just use file.filename
         if file:
             try:
-                print(filename)
                 s3.put_object(Body=file,
                         Bucket=AWS_BUCKET_NAME,
                         Key=filename,

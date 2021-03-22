@@ -8,7 +8,6 @@ from config import AWS_BUCKET_NAME,s3
 download_resume = Blueprint('download_resume',__name__)
 @download_resume.route('/download-resume/<id>')
 def download(id):
-    print(request.headers)
     if request.headers.get('X-ADMIN') and request.headers.get('X-ADMIN')  == '1':
         candidate = Candidate.query.get(id)
         filename = candidate.resume_filename

@@ -5,7 +5,6 @@ from flask_migrate import Migrate, MigrateCommand
 from db import db
 from flask import json, request
 import os
-from routes.index import index
 from routes.register import register
 from routes.download_resume import download_resume
 from routes.all_candidates import all_candidates
@@ -18,7 +17,6 @@ migrate=Migrate(app,db)
 manager = Manager(app)
 manager.add_command('db',MigrateCommand)
 
-app.register_blueprint(index)
 app.register_blueprint(register)
 app.register_blueprint(download_resume)
 app.register_blueprint(all_candidates)
