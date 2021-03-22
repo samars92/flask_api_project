@@ -8,6 +8,9 @@ How to run:
 * pip install -r requirements.txt
 
 db init and migrate:
+* brew install mariadb
+* mysql.server start
+* sudo mysql -u root
 * flask db init
 * flask db migrate
 * flask db upgrade
